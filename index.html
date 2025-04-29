@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HotDog-Hygao</title>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HotDog-Hygão</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
- 
-<script src="javascript/script.js"></script>    
+
+  <!-- Banner de Permissão de Cookies -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Este site usa cookies para melhorar sua experiência. Ao continuar, você concorda com nosso uso de cookies.</p>
+    <button id="accept-cookies">Aceitar</button>
+    <button id="decline-cookies">Recusar</button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="barriga-vermelha"></div>
+    <h1>HotDog do Hygão</h1>
+  </header>
+  
+
+  <!-- Botão flutuante para ver o carrinho -->
+  <button class="botao-flutuante"><a href="#ver-carrinho">Ver Carrinho</a></button>
+
+  <!-- Lista de produtos -->
+  <main class="store">
+    <h2>Monte seu pedido</h2>
+    <div id="products-list">
+      <!-- Produtos serão carregados dinamicamente -->
+    </div>
+  </main>
+
+  <!-- Carrinho de compras -->
+  <div id="ver-carrinho" class="cart">
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items">
+      <!-- Itens do carrinho serão exibidos aqui -->
+    </ul>
+    <div id="cart-total">
+      <p>Total: R$ <span id="total-price">0,00</span></p>
+    </div>
+    <button id="fazer-pedido">Fazer Pedido</button>
+    <button id="clear-cart">Limpar Carrinho</button>
+  </div>
+
+  <!-- Modal de Finalização de Pedido -->
+  <div id="pedido-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Finalizar Pedido</h2>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" />
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" placeholder="Digite seu endereço" />
+
+      <label for="pagamento">Forma de Pagamento:</label>
+      <select id="pagamento">
+        <option value="Pix">Pix</option>
+        <option value="Cartão">Cartão</option>
+        <option value="Dinheiro">Dinheiro</option>
+      </select>
+
+      <div class="modal-buttons">
+        <button id="confirmar-pedido">✅ Confirmar Pedido</button>
+        <button id="cancelar-pedido">❌ Cancelar Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre o HotDog-Hygão</h3>
+        <p>Hot dogs artesanais com ingredientes de qualidade e entrega rápida.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p>📍 Endereço: Av. Dogão, 123 - Ubá</p>
+        <p>📞 Telefone: (32) 99925-3244</p>
+        <p>✉️ Email: contato@hotdoghygão.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <a href="#">📸 Instagram</a> |
+        <a href="#">📘 Facebook</a> |
+        <a href="#">📲 WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 HotDog-Hygão - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="javascript/main.js" type="module"></script>
 </body>
 </html>
