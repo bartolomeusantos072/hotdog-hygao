@@ -2,10 +2,10 @@ import { estabelecimento, cores } from './empresa.js';
 
 export function aplicarTema() {
   document.body.style.backgroundColor = cores.fundo;
-  const header = document.querySelector("header");
+  //const header = document.querySelector("header");
   const footer = document.querySelector("footer");
 
-  if (header) header.style.backgroundColor = cores.primario;
+  //if (header) header.style.backgroundColor = cores.primario;
   if (footer) footer.style.backgroundColor = cores.secundario;
 }
 

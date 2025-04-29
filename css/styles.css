@@ -57,10 +57,10 @@ body {
   color: white;
   border-radius: 5px;
 }
-
+/*
 .cookie-banner button:hover {
   background-color: #b71c1c;
-}
+}*/
 
 .store, .cart {
   width: 45%;
