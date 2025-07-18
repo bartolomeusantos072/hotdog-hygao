@@ -1,7 +1,5 @@
 # 🌭 Hotdog HyGão
 
-![Banner do Projeto](https://bartolomeusantos072.github.io/hotdog-hygao/assets/banner.png) <!-- Coloque um banner se quiser -->
-
 Uma landing page simples, responsiva e estilosa para divulgar o carrinho de hot dogs "HyGão", com foco em apresentação visual, contato direto e identidade local.
 
 [🔗 Acesse o site aqui](https://bartolomeusantos072.github.io/hotdog-hygao/)
